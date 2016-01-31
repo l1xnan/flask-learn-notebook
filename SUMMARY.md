@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [基础知识之 jQuery](chapter1.md)
-* [读书笔记](读书笔记.md)
+* [Gitbook 教程](001-gitbook-tutorials.md)
+* [基础知识之 jQuery](002-base-jquery.md)
+
 
