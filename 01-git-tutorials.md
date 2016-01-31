@@ -144,7 +144,7 @@ npm 全称 Node Package Manager，是 node.js 的模块依赖管理工具。由�
 `mathjax` 总是安装不成功，用 `katex` 代替。（注：`mathjax-beta` 可以安装成功。）
 ```
 {
-    "plugins": ["katex","disqus"],
+    "plugins": ["disqus"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "introducetogitbook"
