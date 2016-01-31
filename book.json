@@ -6,10 +6,18 @@
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
     },
-    "plugins": ["mathjax","disqus"],
+    
+
+    "plugins": [
+        "gitbook-plugin-yahei",
+        "katex",
+        "disqus",
+        "maxiang"
+        ], 
     "pluginsConfig": {
         "disqus": {
             "shortName": "introducetogitbook"
-        }
+        },
+        "katex": {"forceSVG": true}
     }
 }

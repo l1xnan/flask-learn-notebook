@@ -1,4 +1,8 @@
 # Git 相关
+
+简明教程：http://rogerdudler.github.io/git-guide/index.zh.html
+详细教程：http://iissnan.com/progit/
+
 ## `.gitignore` 文件
 Windows 下不让手动建立此类文件，可用以下命令新建：
 
@@ -30,6 +34,7 @@ Private.md
 
 # npm 相关
 
+## 更改镜像
 npm 全称 Node Package Manager，是 node.js 的模块依赖管理工具。由于 npm 的源在国外，所以国内用户使用起来各种不方便。可以将其更改为淘宝的 npm 镜像 `https://registry.npm.taobao.org`：
 1. 临时使用
  ```   
@@ -43,7 +48,13 @@ npm 全称 Node Package Manager，是 node.js 的模块依赖管理工具。由�
     npm config get registry
     // 或
     npm info express
-```
+``` 
+
+## 安装模块
+
+    npm install xxx         # 在当前目录下安装模块
+
+    npm install xxx -g      # 在全局环境下安装模块
 
 # Visual Studio Code 相关
 自动换行及字体配置：
@@ -79,6 +90,30 @@ npm 全称 Node Package Manager，是 node.js 的模块依赖管理工具。由�
     * [Chapter2](chapter2/README.md)    
 其中如 `chapter-n/section x.y.md` 并不表示文件路径上的从属，而表示仅表示文档结构上的从属。
 
+
+## 插件
+`mathjax` 总是安装不成功，用 `katex` 代替。（注：`mathjax-beta` 可以安装成功。）
+```
+{
+    "plugins": ["katex","disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "introducetogitbook"
+        }
+}
+```
+配置好后需要运行命令：
+    
+    gitbook install
+
+其他插件：
+gitbook-plugin-yahei: 以微软雅黑字体显示
+gitbook-plugin-chart: Using C3.js or Highcharts chart library in Gitbook.
+gitbook-plugin-baidu: A gitbook plugin to add Baidu Analytics for your book
+gitbook-plugin-word-count: A word counting plugin for Gitbook
+gitbook-plugin-maxiang: 基于www.maxiang.info(马克飞象) 站点的 gitbook 主题插件
+gitbook-plugin-search-pro: 支持中文搜索
+gitbook-plugin-addcssjs: Adds external CSS and JS files to the gitbook
 ## 编译书籍
 
     gitbook build

@@ -1,6 +1,6 @@
 # jQuery 学习笔记
 
-$$\sum$$
+$$\sum i = 5050$$
 
 ## Ajax
 
