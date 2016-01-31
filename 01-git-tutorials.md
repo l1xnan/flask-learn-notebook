@@ -57,11 +57,12 @@ Private.md
         * [Section1.2](chapter1/section1.2.md)
     * [Chapter2](chapter2/README.md)    
 
-### 构建书籍
+### 编辑书籍
 
     gitbook build
 
 
-### 编译书籍
+### 编译和预览书籍
     
     gitbook serve
+可以用浏览器打开 http://127.0.0.1:4000 查看书籍的效果。
