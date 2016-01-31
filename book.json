@@ -1,4 +1,6 @@
 {
+    "title": "Flask 学习笔记",
+    "language": "zh",
     "styles": {
         "website": "styles/website.css",
         "ebook": "styles/ebook.css",
@@ -9,14 +11,28 @@
     
 
     "plugins": [
-        "katex",
         "disqus",
-        "maxiang"
+        "prism",
+        "-highlight",
+        "splitter",
+        "sectionx",
+        "github",
+        "atoc",
+        "latex-codecogs"
         ], 
     "pluginsConfig": {
         "disqus": {
-            "shortName": "introducetogitbook"
+            "shortName": "l1xnan"
         },
-        "katex": {"forceSVG": true}
+        "github":{
+            "url": "https//github.com/l1xnan"
+        },
+        "latex-codecogs": {
+            "type": "svg"
+            },
+        "atoc": {
+            "addClass": true,
+            "className": "atoc"
+        }
     }
 }
