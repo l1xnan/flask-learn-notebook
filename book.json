@@ -5,5 +5,11 @@
         "pdf": "styles/pdf.css",
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
+    },
+    "plugins": ["mathjax","disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "introducetogitbook"
+        }
     }
 }
