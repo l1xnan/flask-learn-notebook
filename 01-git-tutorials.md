@@ -1,7 +1,7 @@
 # Git 相关
 
-简明教程：http://rogerdudler.github.io/git-guide/index.zh.html
-详细教程：http://iissnan.com/progit/
+1. 简明教程：http://rogerdudler.github.io/git-guide/index.zh.html
+2. 详细教程：http://iissnan.com/progit/
 
 ## `.gitignore` 文件
 Windows 下不让手动建立此类文件，可用以下命令新建：

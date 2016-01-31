@@ -9,7 +9,6 @@
     
 
     "plugins": [
-        "gitbook-plugin-yahei",
         "katex",
         "disqus",
         "maxiang"
