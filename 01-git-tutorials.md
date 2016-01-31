@@ -114,6 +114,9 @@ gitbook-plugin-word-count: A word counting plugin for Gitbook
 gitbook-plugin-maxiang: 基于www.maxiang.info(马克飞象) 站点的 gitbook 主题插件
 gitbook-plugin-search-pro: 支持中文搜索
 gitbook-plugin-addcssjs: Adds external CSS and JS files to the gitbook
+
+测试：$$\sum i = 5050$$
+
 ## 编译书籍
 
     gitbook build
