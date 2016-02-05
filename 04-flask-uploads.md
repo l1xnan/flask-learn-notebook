@@ -99,36 +99,37 @@ if __name__ == '__main__':
     <meta charset="UTF-8">
     <title>上传文件</title>
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-        var files = [];
-        $(document).ready(function () {
-            $('input').change(function () {
-                files = this.files;
-            })
-        });
-        $("#upload-btn").click(function () {
-            var fd = new FormData();    // 列表
-            for (var i = 0; i < files.length; i++) {
-                fd.append("file", files[i]);
-            }
-            $.ajax({
-                url: "",
-                method: 'POST',
-                data: fd,
-                contentType: false,
-                processData: false,
-                cache: false,
-                success: function (data) {
-                    console.log(data);
-                }
-            });
-        })
-    </script>
+
 </head>
 <body>
 <h1>Upload new File</h1>
 <input type="file" name="file" multiple>
 <button id="upload-btn" type="button">upload</button>
+<script>
+    var files = [];
+    $(document).ready(function () {
+        $('input').change(function () {
+            files = this.files;
+        })
+    });
+    $("#upload-btn").click(function () {
+        var fd = new FormData();
+        for (var i = 0; i < files.length; i++) {
+            fd.append("file", files[i]);
+        }
+        $.ajax({
+            url: "",
+            method: 'POST',
+            data: fd,
+            contentType: false, /// 告诉jQuery不要去设置Content-Type请求头
+            processData: false, // 告诉jQuery不要去处理发送的数据
+            cache: false,
+            success: function (data) {
+                console.log(data);
+            }
+        });
+    })
+</script>
 </body>
 </html>
 ```
@@ -141,3 +142,7 @@ if __name__ == '__main__':
 
 - `multiple`: 此设置可以选中多文件上传
 - webkitdirectory`: 此设置可以选中文件夹上传
+
+参见：
+- [使用 FormData 对象](https://developer.mozilla.org/zh-CN/docs/Web/Guide/Using_FormData_Objects)
+- [通过 jQuery Ajax 使用 FormData 对象上传文件](http://www.jianshu.com/p/46e6e03a0d53)
