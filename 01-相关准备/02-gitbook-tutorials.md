@@ -65,6 +65,7 @@ gitbook install
 - sectionx: 分离各个段落，并提供一个展开收起的按钮
 - ace: 插入代码高亮编辑器
 - atoc: 插入 TOC 目录
+- [gtoc](https://github.com/boycgit/gitbook-plugin-gtoc): 为 GitBook 生成目录结构
 - prism: 基于 Prism 的代码高亮
 - mermaid: 使用流程图
 - latex-codecogs: 使用数学方程式。
@@ -81,7 +82,13 @@ gitbook install
 - anchors: 标题带有 github 样式的锚点。
 - ad: 在每个页面顶部和底部添加广告或任何自定义内容。
 - editlink: 内容顶部显示 编辑本页 链接。
-- 参见：
+- [gitbook-ext](https://github.com/simonguo/gitbook-ext): 对 GitBook 的扩展，迁移至 HBook
+  - 提供多种色彩模板选择: theme-green,theme-purple,theme-orange,theme-gray;
+  - 提供菜单可折叠配置;
+  - 提供是否生成菜单序号配置;
+  - 提供标题与版权信息设置。
+
+参见：
 - [Gitbook 的使用和常用插件][1]
 - [GitBook Developers][2]
 - [官网：GitBook Plugins][3]
@@ -98,7 +105,7 @@ gitbook build
 gitbook serve
 ```
 
-可以用浏览器打开 [http://127.0.0.1:4000](http://127.0.0.1:4000) 查看书籍的效果。 此时编辑更改 `*md` 文件，可是实时的显示在浏览器上
+可以用浏览器打开 [http://127.0.0.1:4000](http://127.0.0.1:4000) 查看书籍的效果。此时编辑更改 `*md` 文件，可是实时的显示在浏览器上。
 
 [1]: http://zhaoda.net/2015/11/09/gitbook-plugins/
 [2]: https://developer.gitbook.com/plugins/index.html
